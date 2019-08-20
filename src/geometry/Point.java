@@ -2,8 +2,15 @@ package geometry;
 
 public class Point {
 
-	public Point(int i, int j) {
-		// TODO Auto-generated constructor stub
+	private double x;
+
+	public Point(double x, double y) {
+		this.x = x;
+	}
+
+	public double getX() {
+
+		return x;
 	}
 
 }
