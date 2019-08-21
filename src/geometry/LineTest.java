@@ -20,5 +20,20 @@ class LineTest {
 		Line l = new Line(origin, p);
 		assertEquals(2.0, l.length());
 	}
+	
+	@Test
+	void shouldCalculateLengthOfLineParallelToYAxisInFirstQuadrant() {
+		Point p = new Point(0, 3);
+		Point origin = new Point(0, 1);
+		Line l = new Line(origin, p);
+		assertEquals(2.0, l.length());
+	}
+	@Test
+	void shouldCalculateLengthOfLineParallelToYAxisWithPointReversed() {
+		Point p = new Point(1, 3);
+		Point origin = new Point(-1, 2);
+		Line l = new Line(origin, p);
+		assertEquals(2.0, l.length());
+	}
 
 }
