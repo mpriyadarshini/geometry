@@ -35,5 +35,12 @@ class LineTest {
 		Line l = new Line(origin, p);
 		assertEquals(2.0, l.length());
 	}
+	@Test
+	void shouldCalculateLengthOfLineParallelToXAxisWithPointReversed() {
+		Point p = new Point(4, 1);
+		Point origin = new Point(-2, 1);
+		Line l = new Line(origin, p);
+		assertEquals(6.0, l.length());
+	}
 
 }
