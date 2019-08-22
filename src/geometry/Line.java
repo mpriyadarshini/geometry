@@ -12,11 +12,11 @@ public class Line {
 
 	public double length() {
 		if (p1.getX() == p2.getX()) {
-			return p2.getY() - p1.getY();
+			return Math.abs(p2.getY() - p1.getY());
 		} else if (p2.getY() == p1.getY()) {
-			return p2.getX() - p1.getX();
+			return Math.abs(p2.getX() - p1.getX());
 		}
-		return p2.getX() - p1.getX();
+		return Math.abs(p2.getX() - p1.getX());
 	}
 
 }
