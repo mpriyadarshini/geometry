@@ -42,5 +42,12 @@ class LineTest {
 		Line l = new Line(origin, p);
 		assertEquals(2.0, l.length());
 	}
+	@Test
+	void shouldCalculateLengthOfAnyPoint(){
+		Point origin = new Point(1, 1);
+		Point p = new Point(4,5);;
+		Line l = new Line(origin, p);
+		assertEquals(5.0, l.length());
+	}
 
 }

@@ -12,7 +12,7 @@ public class Line {
 
 	public double length() {
 		double res = 0.0;
-		res = Math.abs((p2.getY() - p1.getY())+(p2.getX()-p1.getX()));
+		res = Math.sqrt(Math.pow((p2.getY()-p1.getY()), 2)+Math.pow((p2.getX()-p1.getX()), 2));
 		return res;
 	}
 
