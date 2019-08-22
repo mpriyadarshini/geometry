@@ -31,16 +31,16 @@ class LineTest {
 	@Test
 	void shouldCalculateLengthOfLineParallelToYAxisWithPointReversed() {
 		Point origin = new Point(1, 3);
-		Point p = new Point(-1, 2);
+		Point p = new Point(1, 2);
 		Line l = new Line(origin, p);
-		assertEquals(2.0, l.length());
+		assertEquals(1.0, l.length());
 	}
 	@Test
 	void shouldCalculateLengthOfLineParallelToXAxisWithPointReversed() {
 		Point origin = new Point(4, 1);
-		Point p = new Point(-2, 1);
+		Point p = new Point(2, 1);
 		Line l = new Line(origin, p);
-		assertEquals(6.0, l.length());
+		assertEquals(2.0, l.length());
 	}
 
 }
